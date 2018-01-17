@@ -10,16 +10,12 @@ const bodyParser = require('body-parser')
 app.use(morgan('dev'))
 app.use(bodyParser.json())
 
-debugger
-app.get('/rides', (req, res, next) => {
-  debugger
-  console.log(`MADE IT`)
-})
-// app.get('/rides', controller.allRidesController)
-// app.get('/rides/:id', controller.ridesByIdController)
-// app.post('/rides', controller.createRideController)
-// app.put('/rides/:id', controller.updateRideController)
-// app.delete('/rides/:id', controller.deleteRideController)
+
+app.get('/rides', controller.allRidesController)
+app.get('/rides/:id', controller.ridesByIdController)
+app.post('/rides', controller.createRideController)
+app.put('/rides/:id', controller.updateRideController)
+app.delete('/rides/:id', controller.deleteRideController)
 
 
 app.use((err, req, res, next) => {
