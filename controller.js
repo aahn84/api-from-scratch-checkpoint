@@ -45,11 +45,10 @@ const deleteRideController = (req, res, next) => {
   const id = parseInt(req.params.id)
 
   const ride = model.deleteRide(id)
-  console.log(ride)
 
   if (!ride) return next({ status: 404, message: `Could not find ride with id of ${id}` })
 
-  res.status(204).json({data: ride})
+  res.status(200).json({data: ride})
 }
 
 module.exports = {
