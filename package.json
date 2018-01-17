@@ -1,0 +1,20 @@
+{
+  "name": "api-from-scratch",
+  "version": "1.0.0",
+  "description": "Build a RESTful API according to an MVC architecture for a single resource based on your choosing. For example, if you were going to build an API for a Snack resources your routes might look like:",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "morgan": "^1.9.0",
+    "nodemon": "^1.14.11"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
